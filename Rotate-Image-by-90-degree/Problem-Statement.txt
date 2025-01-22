@@ -1,0 +1,11 @@
+Given a matrix, your task is to rotate the matrix 90 degrees clockwise
+
+Example 1:
+Input:
+ [[11,22,33],[44,55,66],[77,88,99]]
+
+Output
+: [[77,44,11],[88,55,22],[99,66,33]]
+
+Explanation:
+ Rotate the matrix simply by 90 degree clockwise and return the matrix.
