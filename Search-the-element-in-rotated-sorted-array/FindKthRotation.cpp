@@ -20,8 +20,14 @@ class solution{
         int high = n-1;
         while(low <= high){
             int mid = low + (high - low)/2;
+            // The modulo operation % n ensures
+            // that if mid is the last index (n-1), next wraps around to the first index (0).
             int next = (mid + 1) % n;
+            // The modulo operation % n ensures 
+            // that if mid is the first index (0), prev wraps around to the last index (n-1)
             int prev = (mid + n - 1) % n;
+            // The next and prev variables are used to check if the current middle element
+            // (arr[mid]) is the smallest element in the array, which would indicate the point of rotation.
             if(arr[mid] <= arr[next] && arr[mid] <= arr[prev]){
                 return mid;
             }
